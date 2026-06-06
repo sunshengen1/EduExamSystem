@@ -137,9 +137,6 @@ edu-exam-system
 │   └── vite.config.js
 ├── LICENSE                  # MIT开源主协议文件
 └── OPEN_SOURCE_NOTICE.md    # 第三方开源组件合规声明
- 
-plaintext  
-
 ## 补充README末尾小备注
  
 源码说明
