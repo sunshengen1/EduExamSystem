@@ -105,3 +105,58 @@ Excel/PDF成绩榜单、准考证清单Excel、分考场花名册ZIP压缩包、
 1. 项目主体开源协议：MIT License → LICENSE
 2. 第三方依赖清单与协议：OPEN_SOURCE_NOTICE.md
 3. 终端用户查看开源声明：系统登录弹窗《用户使用服务协议》第三章节
+## 项目目录结构
+ 
+ 
+edu-exam-system
+├── doc                    # 项目文档资源
+│   └── sql
+│       └── init.sql       # 数据库初始化脚本(全表+基础配置数据)
+├── src
+│   ├── main
+│   │   ├── java/com/edu/exam
+│   │   │   ├── config        # 全局配置类、拦截器、安全配置
+│   │   │   ├── controller    # 所有接口控制器(档案/OCR/统计/安全/协议/新手引导)
+│   │   │   ├── entity        # 数据库实体类
+│   │   │   ├── mapper        # Mybatis-Plus Mapper接口
+│   │   │   ├── service       # 业务逻辑层
+│   │   │   │   ├── impl      # Service实现类
+│   │   │   ├── util          # 工具类(OCR、ZXing二维码、Excel导出、计算工具)
+│   │   │   └── annotation    # 自定义注解(@PermissionCheck权限注解)
+│   │   └── resources
+│   │       ├── application.yml # 项目配置(数据库、端口等)
+│   │       └── mybatis       # mybatis xml文件
+│   └── test                 # 单元测试目录
+├── front                    # Vue3前端源码
+│   ├── src
+│   │   ├── api              # 接口请求封装
+│   │   ├── views            # 页面(档案/OCR阅卷/统计报表/安全设置/协议配置/新手引导配置)
+│   │   ├── components       # 公共组件
+│   │   └── utils            # 前端通用工具
+│   ├── package.json
+│   └── vite.config.js
+├── LICENSE                  # MIT开源主协议文件
+└── OPEN_SOURCE_NOTICE.md    # 第三方开源组件合规声明
+ 
+plaintext  
+
+## 补充README末尾小备注
+ 
+ 
+源码说明
+ 
+1. 后端：标准SpringBoot分层架构，Mybatis-Plus CRUD开发；
+2. 前端：Vue3+ElementPlus CompositionAPI写法；
+3. OCR识别：预留PaddleOCR调用接口，可自行替换云端OCR服务；
+4. 二维码解析：ZXing内置实现，无需额外付费SDK。
+ 
+plaintext  
+
+## 整套开源物料全部整理完成清单
+1. LICENSE（MIT协议+附件说明）
+2. OPEN_SOURCE_NOTICE.md（第三方依赖合规清单）
+3. README.md（完整介绍+部署+目录+迭代计划）
+4. CSDN/开源中国精简发帖文案
+5. 项目标签、封面文案、SEO关键词
+6. 系统内置用户协议固定模板（含开源声明）
+
