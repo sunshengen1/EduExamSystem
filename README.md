@@ -141,17 +141,12 @@ edu-exam-system
 plaintext  
 
 ## 补充README末尾小备注
- 
  
 源码说明
- 
 1. 后端：标准SpringBoot分层架构，Mybatis-Plus CRUD开发；
 2. 前端：Vue3+ElementPlus CompositionAPI写法；
 3. OCR识别：预留PaddleOCR调用接口，可自行替换云端OCR服务；
 4. 二维码解析：ZXing内置实现，无需额外付费SDK。
- 
-plaintext  
-
 ## 整套开源物料全部整理完成清单
 1. LICENSE（MIT协议+附件说明）
 2. OPEN_SOURCE_NOTICE.md（第三方依赖合规清单）
